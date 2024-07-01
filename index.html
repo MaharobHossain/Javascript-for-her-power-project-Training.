@@ -12,16 +12,33 @@
     <script>
 
 
-        var Age = 33;
-        var City = 'Uttara';
+    //    use of if else if statement
 
+          var Mark=35;
 
-        if (Age>=20 && City=='Gazipur'){
-            document.write('You won the game');
-        }
-        else{
-            document.write('You fail the game');
-        }
+          if(Mark>=80 && Mark<=100){
+            document.write('You got A+');
+          }
+
+          else if (Mark>=60 && Mark<=70){
+            document.write('You got A');
+          }
+          else if (Mark>=50 && Mark<=60){
+            document.write('You got A-');
+          }
+
+          else if (Mark>=40 && Mark<=50){
+            document.write('You got B');
+          }
+
+          else if (Mark>=33 && Mark<=40){
+            document.write('You got C');
+          }
+
+          else{
+            document.write('You are Fail')
+          }
+
 
 
 
