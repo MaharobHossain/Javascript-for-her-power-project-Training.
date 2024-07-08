@@ -16,38 +16,23 @@
 
     <script>
            
-           function myBook(name){
-            document.write(name, "<br>");
+          var myLaptop={
+            brand:"Dell",
+            disply:12,
+            isLaptop:true,
+            ram:"8 GB",
+            pocessor:"core i7",
+            isSSD:true
+          }
+
+        //   document.write(myLaptop ['brand']);
+
+                 //for in loop ar bebohar.
+
+
+        for(var item in myLaptop){
+            document.write(myLaptop[item]+"<br>")
         }
-        myBook("1.Bisad sindhu");
-        myBook("2.Gitanjoli");
-       
-        function myMakeup(){
-            return "Maha"
-        }
-
-        newValue=myMakeup()+"rob";
-        document.write(newValue);
-
-
-        function addTwoNumber(num1, num2){
-            return num1*num2;
-        }
-
-        newValue = addTwoNumber(11, 11)+10;
-        document.write(newValue);
-        
-        
-
-        
-      
-
-        
-
-
-
-
-
 
 
 
