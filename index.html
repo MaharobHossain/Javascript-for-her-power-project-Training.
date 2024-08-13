@@ -7,31 +7,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
- 
+
+    <ul id="MyID"><h1></h1></ul> <br> <br>
+    <input id="MyInput"> <br> <br>
+    <button onclick="AddItem()">Add This</button>
+
+    <!-- <h1 id="rrr" >Select Your Color.</h1>
+    <button onclick="AddColor()">Add Color</button>
+    <button onclick="RemoveColor()">Remove Color</button>
+    -->
+
+Market Recarce/Online Serve.
+
+
     <script>
-        
-                // substring method 
 
-     var bookName="BanglaDesh";
-
-     document.write(bookName.toUpperCase());
-
-
-
+   function AddItem(){
    
-                                
+    var itemValue= document.getElementById('MyInput').value;
+
+    var listItem= document.createElement('li');
+    listItem.innerHTML=itemValue;
+
+    var myItem= document.getElementById('MyID');
+    myItem.appendChild(listItem);
+   }
 
 
 
 
 
-
-
-
-
-
-       
+        
+    //  function AddColor(){
+    //     h1Tag=document.getElementById('rrr')
+    //     h1Tag.classList.add('color: blue;')
+    //  } 
+    //  function RemoveColor(){
+    //     h1Tag=document.getElementById('rrr')
+    //     h1Tag.classList.remove('color: blue;')
+    //  } 
 
 
 
