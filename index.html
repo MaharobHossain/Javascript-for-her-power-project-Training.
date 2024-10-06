@@ -8,46 +8,33 @@
 </head>
 <body>
 
-    <ul id="MyID"><h1></h1></ul> <br> <br>
-    <input id="MyInput"> <br> <br>
-    <button onclick="AddItem()">Add This</button>
-
-    <!-- <h1 id="rrr" >Select Your Color.</h1>
-    <button onclick="AddColor()">Add Color</button>
-    <button onclick="RemoveColor()">Remove Color</button>
-    -->
-
-Market Recarce/Online Serve.
-
-
     <script>
 
-   function AddItem(){
    
-    var itemValue= document.getElementById('MyInput').value;
+var Mark=35;
 
-    var listItem= document.createElement('li');
-    listItem.innerHTML=itemValue;
+if(Mark>=80 && Mark<=100){
+  document.write('You got A+');
+}
 
-    var myItem= document.getElementById('MyID');
-    myItem.appendChild(listItem);
-   }
+else if (Mark>=60 && Mark<=70){
+  document.write('You got A');
+}
+else if (Mark>=50 && Mark<=60){
+  document.write('You got A-');
+}
 
+else if (Mark>=40 && Mark<=50){
+  document.write('You got B');
+}
 
+else if (Mark>=33 && Mark<=40){
+  document.write('You got C');
+}
 
-
-
-        
-    //  function AddColor(){
-    //     h1Tag=document.getElementById('rrr')
-    //     h1Tag.classList.add('color: blue;')
-    //  } 
-    //  function RemoveColor(){
-    //     h1Tag=document.getElementById('rrr')
-    //     h1Tag.classList.remove('color: blue;')
-    //  } 
-
-
+else{
+  document.write('You are Fail')
+}
 
     </script>
 
